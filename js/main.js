@@ -2,8 +2,8 @@ const app = Vue.createApp({
     data(){
         return{
             title: 'Contador VUE',
-            count: 0
-        }
+            count: 0,
+        };
     },
     methods:{
         modCount(instruction = "add", limit = 1){
@@ -12,5 +12,5 @@ const app = Vue.createApp({
             else
                 this.count += limit;
         },
-    }
-})
+    },
+});
